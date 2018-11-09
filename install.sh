@@ -7,6 +7,7 @@
 
 #TODO(darin-m): it's better to get settings from command line arguments...
 
+
 password=""
 if [ -n "$1" ]
 then

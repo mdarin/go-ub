@@ -16,6 +16,8 @@ else
   exit 1
 fi
 
+
+
 echo
 echo "### Uninstallig Golang ###"
 echo "##########################"
