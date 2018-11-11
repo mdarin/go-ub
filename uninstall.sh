@@ -4,6 +4,7 @@
 # Golang Uninstallation
 # by official suggested way...
 # 
+###
 
 password=""
 if [ -n "$1" ]
@@ -13,11 +14,12 @@ then
   echo "password: $password"
 else
   echo "You should define sudo password!"     
+	echo "Usage: cmd <sudo-password>"
   exit 1
 fi
 
 
-
+echo
 echo
 echo "### Uninstallig Golang ###"
 echo "##########################"
@@ -38,6 +40,8 @@ echo
 echo "Cleaning up" 
 echo $password | sudo -S apt autoremove -y
 echo
+echo
 echo "Checking that go has been removed successfully"
 go version
 echo 
+echo

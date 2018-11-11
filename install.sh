@@ -3,7 +3,8 @@
 #
 # Golang installation
 # by official suggested way...
-# 
+#
+### 
 
 #TODO(darin-m): it's better to get settings from command line arguments...
 
@@ -16,6 +17,7 @@ then
   echo "password: $password"
 else
   echo "You should define sudo password!"     
+	echo "Usage: cmd <sudo-password>"
   exit 1
 fi
 
@@ -52,7 +54,8 @@ echo "Creating your workspace directory, $HOME/go."
 echo 
 export GOPATH=$HOME/go
 echo
+echo
 # show version
 go version
 echo 
-
+echo
